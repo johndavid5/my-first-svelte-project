@@ -10,7 +10,7 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<button on:click={handleClick}>
-	Clicked {count} time{count==1?'':'s'}
+	You clicked {count} {count===1?'time':'times'}
 	</button>
 	<p>{count} doubled is {doubled}</p>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
@@ -26,15 +26,17 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		/* color: #ff3e00; */
+		color: orange;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
 	}
 
 	h2 {
-		color: purple;
-		font-family: 'Comic Sans MS', cursive;
+		color: green;
+		font-family: courier, monospace;
+		/* font-family: 'Comic Sans MS', cursive; */
 		/* font-size: 2em; */
 	}
 
