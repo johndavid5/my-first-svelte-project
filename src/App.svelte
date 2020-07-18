@@ -1,6 +1,7 @@
 <script>
 	export let name;
 	let count = 0;
+	// Reactive declaration...
 	$: doubled = count * 2;
 	function handleClick(){
 		count += 1;
@@ -12,7 +13,7 @@
 	<button on:click={handleClick}>
 	You clicked {count} {count===1?'time':'times'}
 	</button>
-	<p>{count} doubled is {doubled}</p>
+	<p>{count} doubled is {doubled} or {count*2}</p>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<h2>Let off some steam, Bennett!</h2>
 </main>
